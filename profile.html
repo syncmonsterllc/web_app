@@ -27,6 +27,8 @@
           <div class="pane pane-sm sidebar">
             <nav class="nav-group">
               <h5 class="nav-group-title">Your drive</h5>
+              <a href="index.html"><div id="stack"><span class="icon icon-menu"></span></div></a>
+              <a href="index_grid.html"><div id="thumb"><span class="icon icon-layout"></span></div></a>
               <span class="nav-group-item">
                 <span class="icon icon-upload-cloud"></span>
                 <a href="upload.html">Upload</a>
@@ -60,7 +62,7 @@
                 <a href="upgrade.html">Upgrade</a>
               </span>
             </nav>
-              
+
               <nav class="nav-group">
               <h5 class="nav-group-title" id="acc_open">Account<span class="fa fa-caret-down" id="open"></span><span class="fa fa-caret-right" id="close"></span></h5>
               <div id="acc">
@@ -101,13 +103,61 @@
           </div>
 
           <div class="pane">
+            <div class="tab-group">
+              <div class="tab-item active" id="account_tab">
+                <span class=""></span>
+                Account
+              </div>
+              <div class="tab-item" id="connect_tab">
+                <span class=""></span>
+                Connect
+              </div>
+              <div class="tab-item" id="warning_tab">
+                <span class=""></span>
+                Warning
+              </div>
+            </div>
+
+            <div id="account_tab_content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <span>Name:</span><span><p>$_User-name</p></span><br />
+                    <span>Plan:</span><span><p>$_User-plan</p></span><br />
+                    <span>Avatar:</span><span><p>$_User-avatar</p></span>
+                    <!--...radial progress of the cloud account usage...-->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="connect_tab_content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="warning_tab_content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+                  </div>
+                </div>
+              </div>
+            </div>
 
           </div>
-          
-          
-          
-          
-          
+
+
+
+
+
         </div>
       </div>
     </div>

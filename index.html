@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dissect</title>
 
     <!-- Stylesheets -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../../css/photon.min.css">
     <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="boot/css/bootstrap.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="boot/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="boot/js/bootstrap.min.js"></script>
 
     <!-- Javascript -->
     <script src="js/menu.js" charset="utf-8"></script>
@@ -26,7 +35,9 @@
         <div class="pane-group">
           <div class="pane pane-sm sidebar">
             <nav class="nav-group">
-              <h5 class="nav-group-title">Your drive</h5>
+              <h5 class="nav-group-title">Your drive</h5><br>
+              <a href="index.html"><div id="stack"><span class="icon icon-menu"></span></div></a>
+              <a href="index_grid.html"><div id="thumb"><span class="icon icon-layout"></span></div></a>
               <span class="nav-group-item">
                 <span class="icon icon-upload-cloud"></span>
                 <a href="upload.html">Upload</a>
@@ -60,7 +71,7 @@
                 <a href="upgrade.html">Upgrade</a>
               </span>
             </nav>
-              
+
               <nav class="nav-group">
               <h5 class="nav-group-title" id="acc_open">Account<span class="fa fa-caret-down" id="open"></span><span class="fa fa-caret-right" id="close"></span></h5>
               <div id="acc">
@@ -101,14 +112,38 @@
           </div>
 
           <div class="pane">
-            <table class="table-striped">
+              <div id="det">
+                  <div  class="row">
+                  <img class="img-responsive col-md-4" alt="..." src="http://placehold.it/350x150" />
+                  <h5 class="col-md-8">Details of $_filename</h5>
+                  </div>
+                  <span><p>$_Size</p></span>
+                  <span><p>$_Cloud account it is stored on</p></span>
+                  <span><p>$_Date modified</p></span>
+                  <span><p>$_Modified by $_User</p></span>
+                  <div class="row" id="action">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                      <span class="icon icon-star"><p>Favorite</p></span>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                      <span class="icon icon-trash"><p>Delete</p></span>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                      <span class="icon icon-share"><p>Share</p></span>
+                    </div>
+                  </div>
+                <span class="icon icon-cancel" id="exit"></span>
+              </div>
+            <table class="table table-striped">
               <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Kind</th>
-                  <th>Date Modified</th>
-                  <th>Author</th>
-                </tr>
+                <a href="#" >
+                  <tr class="det_display">
+                    <th>Name</th>
+                    <th>Kind</th>
+                    <th>Date Modified</th>
+                    <th>Author</th>
+                  </tr>
+                </a>
               </thead>
               <tbody>
                 <tr>
@@ -222,11 +257,11 @@
               </tbody>
             </table>
           </div>
-          
-          
-          
-          
-          
+
+
+
+
+
         </div>
       </div>
     </div>
