@@ -111,3 +111,7 @@ cursor: pointer;
 .container{
 	padding: 1em 1.5em;
 }
+#acc_open span{
+	cursor: pointer;
+	
+}

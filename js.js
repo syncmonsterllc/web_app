@@ -1,25 +1,31 @@
 $(document).ready(function(){
     $("#close").click(function(){
-        $("#acc").hide();
+        $("#acc").show();
     });
-    $("#acc_open").click(function(){
-        $("#acc").show(1000);
-    });
-    $("#acc_open").click(function(){
+    $("#close").click(function(){
         $("#close").hide();
     });
-    $("#acc_open").click(function(){
-        $("#open").show(1000);
+    $("#close").click(function(){
+        $("#open").show();
+    });
+    $("#open").click(function(){
+        $("#acc").hide();
+    });
+    $("#open").click(function(){
+        $("#open").hide();
+    });
+    $("#open").click(function(){
+        $("#close").show();
     });
 
 });
 
 $(document).ready(function(){
     $(".det_display").click(function(){
-        $("#det").show(550);
+        $("#det").show();
     });
     $("#exit").click(function(){
-        $("#det").hide(550);
+        $("#det").hide();
     });
 });
 
