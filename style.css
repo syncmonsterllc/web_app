@@ -72,11 +72,23 @@ cursor: pointer;
 	background-image: linear-gradient(to bottom,#e8e6e8 0,#d1cfd1 100%);
 	padding: 25px;
 	outline: 0.1em #333 solid;
+	z-index: 99;
 }
 @media screen(max-width: 1000px) {
 	#det{
 		width: 75vw;
 	}
+}
+#overlay{
+	z-index: 50;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	top: 0;
 }
 #exit{
 	font-size: 1.5em;
@@ -113,5 +125,4 @@ cursor: pointer;
 }
 #acc_open span{
 	cursor: pointer;
-	
 }

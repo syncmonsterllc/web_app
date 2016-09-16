@@ -20,12 +20,36 @@ $(document).ready(function(){
 
 });
 
+//$(document).ready(function(){
+//  $(function(){
+//    $(".table-striped tr").addClass("det_display");
+//  });
+//});
+
 $(document).ready(function(){
     $(".det_display").click(function(){
         $("#det").show();
     });
     $("#exit").click(function(){
         $("#det").hide();
+    });
+    $(".det_display").click(function(){
+        $("#overlay").show();
+    });
+    $("#overlay").click(function(){
+        $("#det").hide();
+    });
+    $("#overlay").click(function(){
+        $("#overlay").hide();
+    });
+    $("#exit").click(function(){
+        $("#overlay").hide();
+    });
+    $(".toolbar").click(function(){
+        $("#overlay").hide();
+    });
+    $(".toolbar").click(function(){
+        $("#det_display").hide();
     });
 });
 
