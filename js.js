@@ -49,7 +49,7 @@ $(document).ready(function(){
         $("#overlay").hide();
     });
     $(".toolbar").click(function(){
-        $("#det_display").hide();
+        $("#det").hide();
     });
 });
 
